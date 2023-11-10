@@ -49,17 +49,30 @@
             EmpStack.Push(em4);
             EmpStack.Push(em5);
 
-            
-            foreach (Employee emp in EmpStack)
-            {
+            //STACK - PRINT
+            //foreach (Employee emp in EmpStack)
+            //{
+            //    Console.WriteLine("{0} - {1} - {2} - {3}", emp.ID, emp.Name, emp.Salary, emp.Gender);
+            //    Console.WriteLine("Item in stack = " + EmpStack.Count);
+
+            //}
+
+
+
+            //STACK - POP
+
+            while (EmpStack.Count > 0)
+            {             
+                Employee emp = EmpStack.Pop();
                 Console.WriteLine("{0} - {1} - {2} - {3}", emp.ID, emp.Name, emp.Salary, emp.Gender);
                 Console.WriteLine("Item in stack = " + EmpStack.Count);
+               
                 
+
             }
+            
 
 
-           
-                
         }   
     }
 }
